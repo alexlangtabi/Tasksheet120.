@@ -25,16 +25,7 @@ public class cumulative {
         }
         return sum;
     }
-    public static int sumCum(int num) {
-        int sum = 0;
-        for (int i = 1; i <=num; i++) {
-            sum += i;
-        }
-        return sum;
-    }
-
-
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         cumulative cum = new cumulative();
         System.out.println("Cumulative sum for 4 is " + cum.par4()) ;
         System.out.println("Cumulative sum for 5 is " + cum.par5()) ;
