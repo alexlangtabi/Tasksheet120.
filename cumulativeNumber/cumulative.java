@@ -7,24 +7,23 @@ public class cumulative {
             sum+=number;
         }
         return sum;
-
     }
     public static void main(String[] args) {
-        int[] nArray={1,2,3,4};
-        int comp=sum(nArray);
-        System.out.println(" Cumulative Sum for 4 : " +comp);
-        int[] nArray1={1,2,3,4,5};
-        int comp1=sum(nArray1);
-        System.out.println(" Cumulative Sum for 5 : " +comp1);
-        int[] nArray2={1,2,3,4,5,6,7,8,9,10};
-        int comp2=sum(nArray2);
-        System.out.println(" Cumulative Sum for 10: " +comp2);
-        System.out.println("Total sum of cumulative :"+(comp+comp1+comp2));
-
-        //int comp= sum(nArray);
-
-
-    }
+        int[] par = {4,5,10};
+       int total=0;
+       int sFinal=0;
+        for (int i = 0; i <=2; i++) {
+            System.out.print(par[i]+ " = ");
+            for (int j = 1; j <= par[i]; j++) {
+                System.out.print(j+" ");
+                int [] sArray = {total +=j};
+                 sFinal=sum(sArray);
+            }
+            System.out.println();
+            System.out.println("Cumulative Sum for "+ par[i]+" is " + sFinal);
+            total-=total;
+        }
+     }
 }
 
 
